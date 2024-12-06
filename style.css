@@ -27,13 +27,13 @@ body h3 {
   color: #ffa502;
   font-size: 1.5rem;
 }
-body .container .choices {
+body .container .choix {
   display: flex;
   flex-wrap: wrap;
   margin: 3rem auto 3rem;
   width: 500px;
 }
-body .container .choices button {
+body .container .choix button {
   flex: 1 0 45%;
   width: 200px;
   height: 80px;
@@ -42,19 +42,23 @@ body .container .choices button {
   border: none;
   margin: 0.4rem;
   outline: none;
-  background: #dfe4ea;
   user-select: none;
   font-weight: 600;
 }
-body .container .choices button:hover {
+/*body .container .choix button:hover {
   background: #ffa502;
   transition: 0.5s;
+}*/
+button:hover
+{
+  transform: scale(0.95);
+  transition: transform 0.1s;
 }
-body .container .choices button:active {
+body .container .choix button:active {
   transform: scale(0.9);
   transition: transform 0.1s;
 }
-body .container .choices button p {
+body .container .choix button p {
   font-size: 1.3rem;
 }
 body #progress {
@@ -63,3 +67,108 @@ body #progress {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.bonneReponse
+{
+  background-color: greenyellow;
+  
+}
+.mauvaiseReponse
+{
+  background-color: red;
+  
+}
+.hidden
+{
+  display: none;
+}
+
+#texteCommencerQuiz
+{
+  font-size: 2em;
+  color: white;
+}
+#bouttonCommencerQuiz
+{
+  background-color: #ffa502;
+}
+dialog
+{
+  background-color: rgba(93, 188, 251, 0.5);
+  width: 100%;
+  height: 80%;
+  border-width: 0px;
+  align-content: center;
+  
+}
+#zonePage
+{
+  border-color: blue;
+  background-color: #dfe4ea;
+  width: 80%;
+  height: 80%;
+
+  justify-self: center;
+  
+  border-radius:   2%;
+}
+
+#dialogTitre
+{
+  justify-self: center;
+  width: 50%;
+}
+
+#texteTitre
+{
+  border-style: solid;
+  border-color: blue;
+  border-width: 0px 0px 1px 0px;
+}
+#dialogDate
+{
+  color: black;
+}
+#dialogInfo
+{
+  display: flex;
+  flex-direction: column;
+  justify-items: left;
+  align-items: start;
+  width: 50%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+.dialogInfo_1
+{
+  margin-bottom: 1%;
+}
+#imageMM
+{
+  justify-self: right;
+  width: 200px;
+}
+#dialogContenu
+{
+  display: flex;
+}
+#btnFermerFenetre
+{
+  width: 25%;
+  height: 10%;
+  background-color: #512FF8;
+
+  border-radius: 10%;
+  color: white;
+  font-size: 1.5em;
+}
+#btnBanFenetre
+{
+  margin-top: 1%;
+  font-style: italic;
+}
+
+#btnBanFenetre:hover
+{
+  cursor: pointer;
+}

@@ -229,6 +229,7 @@ function commencerQuiz()
     changerQuestions();
 }
 
+/*Est appelé lorsque la dernière question du Quiz a été répondue, met fin au Quiz et montre un message selon le nombre de points du joueur*/
 function finQuiz()
 {
     bouttonsQuestion0.classList.add("hidden");
@@ -278,11 +279,13 @@ if(localStorage.getItem('afficher') === 'oui')
     zoneDialog.showModal();
 }
 
+/*Ferme la boite de dialogue*/
 function fermerDialog()
 {
     zoneDialog.close();
 }
 
+/*Ferme la boite de dialogue et elle ne peut plus se réouvrir lors des prochains charchement de la page*/
 function fermerEtNeplusOuvrirDialog()
 {
     zoneDialog.close();
